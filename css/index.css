@@ -1,0 +1,32 @@
+* {
+    background-color: white;
+    margin: 20;
+    padding: 20;
+    border: 5px;
+}
+
+.h1,
+.h2,
+.p {
+    font-family: "Montserrat";
+    text-align: left;
+}
+
+.h1 {
+    color: green;
+}
+
+.h2,
+.p {
+    color: black;
+}
+
+.h1,
+.h2 {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.p {
+    font-size: 12px;
+}
