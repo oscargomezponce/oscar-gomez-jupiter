@@ -1,0 +1,91 @@
+body {
+    background-color: white;
+    font-family: "Montserrat", sans-serif;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    
+}
+
+.section {
+    margin: 30px;
+    padding: 20px;
+}
+
+h1,
+h2,
+p {
+    text-align: left;
+}
+
+h1 {
+    color: green;
+}
+
+h2,
+p {
+    color: black;
+}
+
+h1,
+h2 {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+p {
+    font-size: 12px;
+}
+
+#Experience li {
+    display: flex;
+    flex-direction: column;
+    margin: 15px 0;
+    padding: 15px;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+#Experience li .job-title {
+    font-weight: bold;
+    flex: 1;
+}
+
+#Experience li .job-date {
+    flex: 1;
+    text-align: right;
+    color: #777;
+}
+
+#Experience li .job-description {
+    margin-top: 5px;
+    color: #333;
+}
+
+#Connect a {
+    color: #0073e6;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+#Connect a:hover {
+    color: #005bb5;
+    text-decoration: underline;
+}
+
+#Connect ul {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+#Connect li {
+    list-style: none;
+}
+
+#Experience h2 {
+    text-align: center;
+}
