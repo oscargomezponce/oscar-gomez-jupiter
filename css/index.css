@@ -1,0 +1,158 @@
+/* Desktop base style */
+body {
+    background-color: white;
+    font-family: "Montserrat", sans-serif;
+    color: #333;
+    font-size: 1.2rem;
+    line-height: 1.8;
+    margin: 0;
+    padding: 0;
+}
+
+.section {
+    margin: 30px;
+    padding: 20px;
+}
+
+h1, h2, p {
+    text-align: left;
+}
+
+h1 {
+    color: green;
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+h2 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: black;
+    margin-bottom: 15px;
+}
+
+p {
+    font-size: 1rem;
+    color: black;
+    margin-bottom: 15px;
+}
+
+#Experience ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+#Experience li {
+    display: flex;
+    flex-direction: column;
+    margin: 15px 0;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#Experience li .job-title {
+    font-weight: bold;
+    flex: 1;
+}
+
+#Experience li .job-date {
+    flex: 1;
+    text-align: right;
+    color: #777;
+}
+
+#Experience li .job-description {
+    margin-top: 5px;
+    color: #333;
+}
+
+#Connect ul {
+    display: flex;
+    gap: 30px;
+    justify-content: flex-start;
+}
+
+#Connect a {
+    color: #0073e6;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+#Connect a:hover {
+    color: #005bb5;
+    text-decoration: underline;
+}
+
+#Connect li {
+    list-style: none;
+}
+
+/* Tablet style */
+@media (max-width: 1024px) {
+    body {
+        font-size: 1.1rem;
+        line-height: 1.6;
+    }
+
+    h1 {
+        font-size: 1.8rem;
+    }
+
+    h2 {
+        font-size: 1.4rem;
+    }
+
+    p {
+        font-size: 0.9rem;
+    }
+
+    #Experience ul {
+        gap: 15px;
+    }
+
+    #Connect ul {
+        justify-content: center;
+    }
+}
+
+/* Mobile style */
+@media (max-width: 768px) {
+    body {
+        font-size: 1rem;
+        line-height: 1.5;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+        text-align: center;
+    }
+
+    h2 {
+        font-size: 1.2rem;
+        text-align: center;
+    }
+
+    p {
+        font-size: 0.85rem;
+        margin-bottom: 10px;
+    }
+
+    #Experience ul {
+        flex-direction: column;
+        padding: 10px;
+        gap: 10px;
+    }
+
+    #Connect ul {
+        gap: 15px;
+        justify-content: center;
+    }
+}
