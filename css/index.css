@@ -95,6 +95,23 @@ p {
     list-style: none;
 }
 
+#Skills ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    padding: 0;
+    list-style: none;
+}
+
+#Skills li {
+    background-color: #f0f0f0;
+    padding: 10px 15px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+    font-size: 1rem;
+    color: #333;
+}
+
 /* Tablet style */
 @media (max-width: 1024px) {
     body {
@@ -120,6 +137,14 @@ p {
 
     #Connect ul {
         justify-content: center;
+    }
+
+    #Skills ul {
+        gap: 10px;
+    }
+
+    #Skills li {
+        font-size: 0.9rem;
     }
 }
 
@@ -154,5 +179,15 @@ p {
     #Connect ul {
         gap: 15px;
         justify-content: center;
+    }
+    
+    #Skills ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #Skills li {
+        width: 100%;
+        text-align: center;
     }
 }
