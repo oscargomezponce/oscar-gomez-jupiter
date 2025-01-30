@@ -112,6 +112,105 @@ p {
     color: #333;
 }
 
+form[name="leave_message"] {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 400px;
+    margin: 20px auto;
+    padding: 15px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+form[name="leave_message"] label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    font-size: 0.9rem;
+}
+
+form[name="leave_message"] input,
+form[name="leave_message"] textarea,
+form[name="leave_message"] button {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+form[name="leave_message"] textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+form[name="leave_message"] button {
+    background-color: #0073e6;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    border: none;
+}
+
+form[name="leave_message"] button:hover {
+    background-color: #005bb5;
+}
+
+#messages {
+    max-width: 600px;
+    margin: 30px auto;
+}
+
+#messages h2 {
+    text-align: center;
+    margin-bottom: 15px;
+    font-size: 1.5rem;
+    color: #333;
+}
+
+#messages ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#messages li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px 0;
+    padding: 10px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+#messages li a {
+    color: #0073e6;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#messages li a:hover {
+    text-decoration: underline;
+}
+
+#messages li button {
+    padding: 5px 10px;
+    background-color: #ff4d4d;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#messages li button:hover {
+    background-color: #d93636;
+}
+
 /* Tablet style */
 @media (max-width: 1024px) {
     body {
@@ -145,6 +244,105 @@ p {
 
     #Skills li {
         font-size: 0.9rem;
+    }
+
+    form[name="leave_message"] {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        max-width: 400px;
+        margin: 20px auto;
+        padding: 15px;
+        background-color: #f9f9f9;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+    
+    form[name="leave_message"] label {
+        font-weight: bold;
+        margin-bottom: 5px;
+        font-size: 0.9rem;
+    }
+    
+    form[name="leave_message"] input,
+    form[name="leave_message"] textarea,
+    form[name="leave_message"] button {
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        font-size: 1rem;
+    }
+    
+    form[name="leave_message"] textarea {
+        resize: vertical;
+        min-height: 100px;
+    }
+    
+    form[name="leave_message"] button {
+        background-color: #0073e6;
+        color: white;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+        border: none;
+    }
+    
+    form[name="leave_message"] button:hover {
+        background-color: #005bb5;
+    }
+    
+    #messages {
+        max-width: 600px;
+        margin: 30px auto;
+    }
+    
+    #messages h2 {
+        text-align: center;
+        margin-bottom: 15px;
+        font-size: 1.5rem;
+        color: #333;
+    }
+    
+    #messages ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+    
+    #messages li {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 10px 0;
+        padding: 10px;
+        background-color: #fff;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    }
+    
+    #messages li a {
+        color: #0073e6;
+        text-decoration: none;
+        font-weight: bold;
+    }
+    
+    #messages li a:hover {
+        text-decoration: underline;
+    }
+    
+    #messages li button {
+        padding: 5px 10px;
+        background-color: #ff4d4d;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+    
+    #messages li button:hover {
+        background-color: #d93636;
     }
 }
 
@@ -180,7 +378,7 @@ p {
         gap: 15px;
         justify-content: center;
     }
-    
+
     #Skills ul {
         flex-direction: column;
         align-items: center;
@@ -189,5 +387,25 @@ p {
     #Skills li {
         width: 100%;
         text-align: center;
+    }
+    
+    form[name="leave_message"] {
+        max-width: 100%;
+    }
+
+    form[name="leave_message"] input,
+    form[name="leave_message"] textarea,
+    form[name="leave_message"] button {
+        font-size: 0.8rem;
+    }
+
+    #messages li {
+        flex-direction: column;
+        gap: 10px;
+        padding: 8px;
+    }
+
+    #messages li button {
+        font-size: 0.8rem;
     }
 }
