@@ -25,9 +25,7 @@ skills.forEach((skillText) => {
     const usersEmail = event.target.usersEmail.value;
     const usersMessage = event.target.usersMessage.value;
   
-    console.log("Name:", usersName);
-    console.log("Email:", usersEmail);
-    console.log("Message:", usersMessage);
+    console.log(`New message from ${usersName} (${usersEmail}): ${usersMessage}`);
   
     const messageSection = document.querySelector("#messages");
     const messageList = messageSection.querySelector("ul");
@@ -43,7 +41,10 @@ skills.forEach((skillText) => {
     removeButton.type = "button";
   
     removeButton.addEventListener("click", () => {
-      messageList.removeChild(newMessage);
+      newMessage.parentNode.removeChild(newMessage);
+      if (messageList.children.length === 0) {
+        messageSection.style.display = "none";
+      }
     });
   
     newMessage.appendChild(removeButton);
