@@ -211,6 +211,20 @@ form[name="leave_message"] button:hover {
     background-color: #d93636;
 }
 
+#Projects ul {
+    list-style: none;
+    padding: 0;
+}
+
+#Projects li {
+    padding: 10px;
+    margin: 5px 0;
+    background-color: white;
+    color: black;
+    font-size: 1rem;
+    border-radius: 5px;
+}
+
 /* Tablet style */
 @media (max-width: 1024px) {
     body {
@@ -344,6 +358,15 @@ form[name="leave_message"] button:hover {
     #messages li button:hover {
         background-color: #d93636;
     }
+
+    #Projects ul {
+        justify-content: center;
+    }
+
+    #Projects li {
+        font-size: 0.9rem;
+        padding: 8px 12px;
+    }
 }
 
 /* Mobile style */
@@ -407,5 +430,17 @@ form[name="leave_message"] button:hover {
 
     #messages li button {
         font-size: 0.8rem;
+    }
+    
+    #Projects ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #Projects li {
+        width: 100%;
+        text-align: center;
+        padding: 10px;
+        font-size: 0.85rem;
     }
 }

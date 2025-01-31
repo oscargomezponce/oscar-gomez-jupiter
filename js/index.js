@@ -52,3 +52,25 @@ skills.forEach((skillText) => {
   
     messageForm.reset();
   });
+
+const GITHUB_USERNAME = "oscargomezponce";
+const apiUrl = `https://api.github.com/users/${GITHUB_USERNAME}/repos`;
+
+fetch(apiUrl)
+  .then(response => response.json())
+  .then(repositories => {
+    const projectSection = document.querySelector("#Projects");
+    const projectList = projectSection.querySelector("ul");
+
+    repositories.forEach(repo => {
+      const project = document.createElement("li");
+      project.innerText = repo.name;
+
+      projectList.appendChild(project);
+    });
+  })
+
+  .catch(error => {
+    alert("Error");
+    console.error("GitHub API Fetch Error:", error);
+  });
