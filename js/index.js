@@ -58,19 +58,21 @@ const apiUrl = `https://api.github.com/users/${GITHUB_USERNAME}/repos`;
 
 fetch(apiUrl)
   .then(response => response.json())
-  .then(repositories => {
+  .then(data => {
+    const repositories = data;
+    console.log(repositories);
+
     const projectSection = document.querySelector("#Projects");
     const projectList = projectSection.querySelector("ul");
 
     repositories.forEach(repo => {
       const project = document.createElement("li");
       project.innerText = repo.name;
-
       projectList.appendChild(project);
     });
   })
 
   .catch(error => {
-    alert("Error");
+    alert("Error fetching repositories");
     console.error("GitHub API Fetch Error:", error);
   });
