@@ -134,10 +134,10 @@ form[name="leave_message"] label {
 form[name="leave_message"] input,
 form[name="leave_message"] textarea,
 form[name="leave_message"] button {
-    padding: 10px;
+    padding: 12px 16px;
     border: 1px solid #ccc;
     border-radius: 5px;
-    font-size: 1rem;
+    font-size: 1.1rem;
 }
 
 form[name="leave_message"] textarea {
@@ -151,6 +151,7 @@ form[name="leave_message"] button {
     cursor: pointer;
     transition: background-color 0.3s ease;
     border: none;
+    min-width: 120px;
 }
 
 form[name="leave_message"] button:hover {
@@ -282,7 +283,7 @@ form[name="leave_message"] button:hover {
     form[name="leave_message"] input,
     form[name="leave_message"] textarea,
     form[name="leave_message"] button {
-        padding: 10px;
+        padding: 10px 14px;
         border: 1px solid #ccc;
         border-radius: 5px;
         font-size: 1rem;
@@ -419,7 +420,9 @@ form[name="leave_message"] button:hover {
     form[name="leave_message"] input,
     form[name="leave_message"] textarea,
     form[name="leave_message"] button {
-        font-size: 0.8rem;
+        font-size: 0.9rem;
+        padding: 12px;
+        width: 100%;
     }
 
     #messages li {
